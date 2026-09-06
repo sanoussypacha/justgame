@@ -1,0 +1,7 @@
+services:
+  sudoku:
+    build: .
+    container_name: tri-play-sudoku
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
