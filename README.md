@@ -1,6 +1,6 @@
 # TRI PLAY
 
-Plateforme multi-supports TRI PLAY (Snake + Sudoku). Branches fusionnées dans `dev`.
+Plateforme multi-supports TRI PLAY (Snake + Sudoku + Tetrix).
 
 ## Lancer avec Docker Compose
 
@@ -29,3 +29,9 @@ npm run dev
 |---|---|
 | Ordinateur | Flèches ou ZQSD / WASD |
 | Mobile / tablette | Boutons tactiles |
+
+### Tetrix
+| Plateforme | Commandes |
+|---|---|
+| Ordinateur | ←→ déplacer, ↑ tourner, ↓ soft drop, Espace hard drop |
+| Mobile / tablette | Boutons tactiles (↻ / ←→↓ / ⇓) |

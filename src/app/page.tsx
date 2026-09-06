@@ -31,13 +31,13 @@ export default function HomePage() {
             <span className="play-link">Jouer →</span>
           </Link>
 
-          <article className="game-card disabled">
+          <Link href="/tetrix" className="game-card">
             <div>
               <h2>TETRIX</h2>
-              <p>Bientôt disponible</p>
+              <p>Clavier sur PC, tactile sur mobile</p>
             </div>
             <span className="play-link">Jouer →</span>
-          </article>
+          </Link>
         </section>
 
         <div className="quick-links" id="defis">
