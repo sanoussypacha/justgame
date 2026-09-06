@@ -1,13 +1,13 @@
 import BottomNav from "@/components/BottomNav";
+import SnakeGame from "@/components/SnakeGame";
 import TopBar from "@/components/TopBar";
-import SudokuGame from "@/components/sudoku/SudokuGame";
 
-export default function SudokuPage() {
+export default function SnakePage() {
   return (
     <>
-      <TopBar title="SUDOKU" showBack />
+      <TopBar title="SNAKE" showBack />
       <main className="main">
-        <SudokuGame />
+        <SnakeGame />
       </main>
       <BottomNav active="Accueil" />
     </>

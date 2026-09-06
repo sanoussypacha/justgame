@@ -1,7 +1,9 @@
 services:
-  sudoku:
-    build: .
-    container_name: tri-play-sudoku
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tri-play
     ports:
       - "3000:3000"
     restart: unless-stopped

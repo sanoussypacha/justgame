@@ -1,8 +1,9 @@
-node_modules
-.next
 .git
+.gitignore
+README.md
 *.md
+ChatGPT Image*
+.next
+node_modules
 Dockerfile
 docker-compose.yml
-.gitignore
-"ChatGPT Image 6 sept. 2026, 16_18_37.png"

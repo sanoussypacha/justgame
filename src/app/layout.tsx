@@ -1,11 +1,20 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TRI PLAY — Sudoku",
+  title: "TRI PLAY",
   description:
     "Tes jeux classiques préférés, partout : ordinateur, mobile et tablette.",
+  applicationName: "TRI PLAY",
+  manifest: "/manifest.webmanifest",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0b1220",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -16,30 +25,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <div className="app-shell">
-          <header className="topbar">
-            <div className="brand">
-              TRI <span>PLAY</span>
-            </div>
-            <div className="topbar-meta">
-              <span>Niveau 1</span>
-              <span>Profil</span>
-            </div>
-          </header>
-          <main className="main">{children}</main>
-          <footer className="bottombar">
-            <nav className="nav-links">
-              <Link className="active" href="/">
-                Accueil
-              </Link>
-              <Link href="/sudoku">Sudoku</Link>
-              <span>Défis</span>
-              <span>Classement</span>
-              <span>Statistiques</span>
-              <span>Profil</span>
-            </nav>
-          </footer>
-        </div>
+        <div className="app-shell">{children}</div>
       </body>
     </html>
   );

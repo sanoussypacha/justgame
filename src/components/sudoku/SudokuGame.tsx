@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 import { boardsEqual, cloneBoard, getConflicts } from "@/lib/sudoku/engine";
 import { generatePuzzle } from "@/lib/sudoku/generate";
 import type { Board, CellCoord, Difficulty } from "@/lib/sudoku/types";
@@ -149,10 +148,7 @@ export default function SudokuGame() {
     <div className="sudoku-layout">
       <section className="panel board-panel">
         <div className="game-header">
-          <Link className="back-link" href="/">
-            ← Accueil
-          </Link>
-          <h1>SUDOKU</h1>
+          <h1>Partie en cours</h1>
           <button
             className="icon-btn"
             type="button"
@@ -162,7 +158,7 @@ export default function SudokuGame() {
           </button>
         </div>
 
-        <div className="board" role="grid" aria-label="Grille de Sudoku">
+        <div className="sudoku-board" role="grid" aria-label="Grille de Sudoku">
           {board.map((row, rowIndex) =>
             row.map((value, colIndex) => {
               const key = `${rowIndex}-${colIndex}`;
@@ -184,7 +180,7 @@ export default function SudokuGame() {
                   type="button"
                   role="gridcell"
                   className={[
-                    "cell",
+                    "sudoku-cell",
                     fixed ? "fixed" : "",
                     selectedCell ? "selected" : "",
                     related && !selectedCell ? "related" : "",

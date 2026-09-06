@@ -1,6 +1,6 @@
-# TRI PLAY — Sudoku
+# TRI PLAY
 
-Partie Sudoku de la plateforme multi-supports TRI PLAY (branche `dev-ibrahim`).
+Plateforme multi-supports TRI PLAY (Snake + Sudoku). Branches fusionnées dans `dev`.
 
 ## Lancer avec Docker Compose
 
@@ -8,7 +8,7 @@ Partie Sudoku de la plateforme multi-supports TRI PLAY (branche `dev-ibrahim`).
 docker compose up --build
 ```
 
-Ouvrir [http://localhost:3000](http://localhost:3000).
+Ouvre [http://localhost:3000](http://localhost:3000).
 
 ## Développement local
 
@@ -17,9 +17,15 @@ npm install
 npm run dev
 ```
 
-## Fonctionnalités Sudoku
+## Jeux
 
+### Sudoku
 - Grille générée (facile / moyen / difficile)
 - Desktop : flèches + chiffres + souris
 - Mobile : sélection tactile + pavé numérique
-- Pause, nouvelle partie, détection des conflits
+
+### Snake
+| Plateforme | Commandes |
+|---|---|
+| Ordinateur | Flèches ou ZQSD / WASD |
+| Mobile / tablette | Boutons tactiles |
