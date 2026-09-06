@@ -1,0 +1,10 @@
+# syntax=docker/dockerfile:1
+
+# Ignore files that should not be sent to the Docker daemon
+.git
+.gitignore
+README.md
+ChatGPT Image*
+*.md
+.next
+node_modules
